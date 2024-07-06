@@ -1,0 +1,125 @@
+/* General Reset and Styles */
+:root {
+    --background-color: #f0f5f9;
+    --text-color: #08088b;
+    --white: #ffffff;
+    --border-color: #ddd;
+    --primary-color: #0a0a14;
+    --primary-color-hover: #1717ed; /* Slightly darker for hover */
+    --error-color: red;
+    --container-bg-opacity: 0.7; /* Increase opacity for better readability */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+form {
+    width: 320px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, var(--container-bg-opacity)); /* White background with opacity */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    text-align: left; /* Center-align text inside the form */
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--primary-color-hover);
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--primary-color-hover);
+}
+
+.error {
+    color: var(--error-color);
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Page-specific Styles */
+#login-page,
+#signup-page {
+    background-image: url('images/bg8.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Logo Styling */
+.logo {
+    display: block;
+    margin: 0 auto 20px auto; /* Center the logo and add bottom margin */
+    width: 150px;
+    transition: transform 0.5s ease; /* Smooth transition for the rotation */
+}
+
+.logo:hover {
+    transform: rotate(360deg); /* Rotate 360 degrees */
+}

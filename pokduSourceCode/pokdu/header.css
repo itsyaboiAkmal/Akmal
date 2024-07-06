@@ -1,0 +1,66 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Add a background color */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden; /* Add overflow to contain floated elements */
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.logo img {
+    width: 50px;
+    vertical-align: middle; /* Align logo vertically */
+}
+
+nav {
+    float: right; /* Float the navigation to the right */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Use inline-block for better alignment */
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px; /* Increase padding for better touch support */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Darken background on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    clear: both; /* Clear floats */
+}

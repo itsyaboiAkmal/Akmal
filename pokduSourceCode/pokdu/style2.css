@@ -1,0 +1,77 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Use a common sans-serif font */
+    background-color: #f0f4f8; /* Light blue-gray background */
+    color: #ffffff; /* Dark gray text */
+}
+
+/* Page header */
+h2 {
+    text-align: center;
+    color: #ffffff; /* Dark blue */
+    margin-top: 20px;
+}
+
+/* Table styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd; /* Light gray border */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    opacity: 0.8;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Light gray border bottom */
+}
+
+th {
+    background-color: #3a7bd5; /* Dark blue header */
+    color: white;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: #edf5fc; /* Light blue */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* White */
+}
+
+/* Link styles */
+a {
+    color: #3a7bd5; /* Dark blue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Logout link */
+a.logout-link {
+    display: box;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #87b9e6; /* Dark blue background */
+    color: black; /* White text */
+}
+
+a.logout-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+    }
+}

@@ -1,0 +1,118 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Use a common sans-serif font */
+    color: #333; /* Dark gray text */
+    background-image: url('images/bg8.jpeg'); /* Correct path to the background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+}
+
+.content-container {
+    margin-bottom: 10px;
+    max-width: 600px; /* Set maximum width */
+    margin: 120px auto 50px; /* Center the container with increased margin-top */
+    background-color: rgba(255, 255, 255, 0.9); /* White background with opacity */
+    padding: 10px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+
+/* Page header */
+h2 {
+    text-align: center;
+    color: #000000; /* Dark blue */
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add subtle text shadow */
+}
+
+/* Labels and input fields */
+label {
+    display: block;
+    margin-bottom: auto; /* Reduce margin for better alignment */
+    color: #000000; /* Medium gray */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="submit"] {
+    width: 100%; /* Set width to 100% for full-width inputs */
+    padding: 10px; /* Increase padding for better input appearance */
+    margin-bottom: 20px; /* Increase margin for better spacing */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size for better readability */
+    box-sizing: border-box;
+    width: 600px;
+}
+
+input[type="submit"] {
+    background-color: #3a7bd5; /* Dark blue */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #235592; /* Darker blue on hover */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+table, th, td {
+    border: 1px solid #3a7bd5; /* Dark blue border */
+}
+
+th, td {
+    padding: 12px; /* Increase padding for better spacing */
+    text-align: center; /* Center align text in cells */
+}
+
+th {
+    background-color: #3a7bd5; /* Dark blue header */
+    color: white;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: #edf5fc; /* Light blue */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* White */
+}
+
+/* Link styles */
+a {
+    color: #3a7bd5; /* Dark blue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Page footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 20px; /* Increase padding for better spacing */
+        max-width: 90%; /* Reduce maximum width for smaller screens */
+    }
+}

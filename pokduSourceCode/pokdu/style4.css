@@ -1,0 +1,76 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Use a common sans-serif font */
+    background-color: #f0f4f8de; /* Light blue-gray background */
+    background-image: url('images/bg8.jpeg');
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+}
+
+/* Page header */
+h2 {
+    text-align: center;
+    color: #ffffff; /* White */
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+/* Table styling */
+table {
+    width: 40%;
+    border-collapse: collapse;
+    margin: 20px auto; /* Center the table */
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Hide overflow to round edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+table, th, td {
+    border: 1px solid #eef0f3; /* Dark blue border */
+}
+
+th, td {
+    padding: 15px; /* Increase padding for better spacing */
+    text-align: justify;
+}
+
+th {
+    background-color: #3a7bd5; /* Dark blue header */
+    color: white;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: #edf5fc; /* Light blue */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* White */
+}
+
+/* Link styles */
+a {
+    color: #ffffff; /* Dark blue */
+    text-decoration: line;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+    color: #1f4e96; /* Darken link color on hover */
+}
+
+/* Page footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,114 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('images/bg8.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+/* Page header */
+h2 {
+    text-align: center;
+    color: #000000; /* Black text */
+    margin-top: 30px;
+}
+
+.shiny-text {
+    background: linear-gradient(90deg, #FFD700, #FF8C00, #FFD700);
+    background-size: 200% 200%;
+    color: #000;
+    animation: shiny 3s linear infinite;
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+@keyframes shiny {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Form and table container */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark background with slight opacity */
+    padding: 20px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    text-align: center; /* Center the text inside the container */
+}
+
+/* Table styling */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px; /* Rounded corners for table */
+    overflow: hidden; /* Ensures rounded corners are visible */
+    margin-left: auto; /* Center the table horizontally */
+    margin-right: auto; /* Center the table horizontally */
+    text-align: center; /* Center table content */
+}
+
+table, th, td {
+    border: 1px solid #eef0f3; /* Light gray border */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    color: #000; /* Black text */
+}
+
+th {
+    background-color: rgba(58, 123, 213, 0.8); /* Semi-transparent dark blue header */
+    color: white; /* White text */
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: rgba(237, 245, 252, 0.8); /* Light blue */
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.8); /* White */
+}
+
+/* Link styles */
+a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgba(58, 123, 213, 0.8); /* Semi-transparent dark blue background */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center link text */
+}
+
+a:hover {
+    background-color: rgba(58, 123, 213, 1); /* Darker blue on hover */
+}
+
+/* Page footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
